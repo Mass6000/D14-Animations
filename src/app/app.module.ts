@@ -6,20 +6,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { OpenCloseComponent } from './open-close/open-close.component';
 import { InsertRemoveComponent } from './insert-remove/insert-remove.component';
-import { MatListModule, MatToolbarModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+import { FilterStaggerComponent } from './filter-stagger/filter-stagger.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OpenCloseComponent,
-    InsertRemoveComponent
+    InsertRemoveComponent,
+    FilterStaggerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
