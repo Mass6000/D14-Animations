@@ -44,6 +44,7 @@ export class FilterStaggerComponent implements OnInit {
   @HostBinding('@pageAnimations') // <-- attach trigger to host
   public animatePage = true; // <-- decorator can't go by itself
 
+
   characters: Array<Character>;
   numberOfChars = -1;
 

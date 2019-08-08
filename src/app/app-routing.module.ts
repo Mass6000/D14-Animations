@@ -7,10 +7,10 @@ import { FilterStaggerComponent } from './filter-stagger/filter-stagger.componen
 
 
 const routes: Routes = [
-  {path: 'open-close', component: OpenCloseComponent},
-  {path: 'insert-remove', component: InsertRemoveComponent},
-  {path: 'filter-stagger', component: FilterStaggerComponent},
-  {path: '**', component: OpenCloseComponent},
+  { path: 'open-close', component: OpenCloseComponent, data: { animation: 'OpenClose' } },
+  { path: 'insert-remove', component: InsertRemoveComponent, data: { animation: 'InsertRemove' } },
+  { path: 'filter-stagger', component: FilterStaggerComponent, data: { animation: 'FilterStagger' } },
+  { path: '**', component: OpenCloseComponent },
 ];
 
 @NgModule({
